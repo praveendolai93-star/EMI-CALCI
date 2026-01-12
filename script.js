@@ -16,7 +16,7 @@ function calculateEMI() {
     let totalPayment = emi * N;
     let totalInterest = totalPayment - P;
 
-    document.getElementById("emi").innerText = "₹ " + emi.toFixed(2);
-    document.getElementById("totalInterest").innerText = "₹ " + totalInterest.toFixed(2);
-    document.getElementById("totalPayment").innerText = "₹ " + totalPayment.toFixed(2);
+    document.getElementById("emi").innerText = "₹" + emi.toFixed(2);
+    document.getElementById("totalInterest").innerText = "₹" + totalInterest.toFixed(2);
+    document.getElementById("totalPayment").innerText = "₹" + totalPayment.toFixed(2);
 }
