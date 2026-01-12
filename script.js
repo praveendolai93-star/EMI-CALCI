@@ -4,9 +4,13 @@ function calculateEMI() {
     let N = document.getElementById("loanTenure").value;
 
     if (P === "" || R === "" || N === "") {
-        alert("Please enter all values");
+        alert("Please fill all fields");
         return;
     }
+
+    P = parseFloat(P);
+    R = parseFloat(R);
+    N = parseInt(N);
 
     let monthlyRate = R / 12 / 100;
 
